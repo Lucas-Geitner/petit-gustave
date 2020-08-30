@@ -16,7 +16,7 @@ const Features = () => {
         Une semaine en Drôme provençale&nbsp;?
       </h3>
       <p className="mt-4 max-w-3xl mx-auto text-center text-xl leading-7 text-gray-500">
-        Il y a trois grandes raison qui rendent le petit gustave si attrayant. Le comfort de sa maison sur-équipé de 8 à 14 personnes. La qualité des activités que nous pouvons y faires: Piscine, feu dans la cheminée, jeux de cartes et enfin son emplacement, au coeur de l'un des villages les plus mignons de la drome.
+        Il y a trois éléments qui rendent le petit gustave si attrayant. Le confort de sa maison suréquipé pour 8 à 14 personnes. La qualité des activités que nous pouvons y faires: Piscine, feu dans la cheminée, jeux de cartes et enfin son emplacement, au coeur de l'un des villages les plus mignons de la drome.
         </p>
     </div>
 
@@ -96,6 +96,10 @@ const Features = () => {
       </div>
     </div>
 
+
+
+    
+
     <svg className="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-12" width="404" height="784" fill="none" viewBox="0 0 404 784">
       <defs>
         <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -109,10 +113,10 @@ const Features = () => {
       <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
         <div className="lg:col-start-2">
           <h4 className="text-2xl leading-8 font-mono font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
-            Activités
+            Un emplacement idéal  
           </h4>
           <p className="mt-3 text-lg leading-7 text-gray-500">
-          Le wifi est accessible dans toute la maison, avec une bonne connexion pour du télétravail ou regarder un film.
+          Notre village médiéval de Marsanne saura vous accueillir, avec sa vie animée : trois cafés-restaurants-hôtels avec terrasse, une librairie et espace de co-working, une boulangerie, une épicerie et un marchand de journaux.
           </p>
 
           <ul className="mt-10">
@@ -137,14 +141,14 @@ const Features = () => {
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center h-12 w-12 rounded-md text-gray-700">
                     <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h5 className="text-xl leading-6 font-bold text-gray-900 font-mono ">Piscine en été, feu en hiver</h5>
+                  <h5 className="text-xl leading-6 font-bold text-gray-900 font-mono ">Faite tout à pieds</h5>
                   <p className="mt-2 text-base leading-6 text-gray-500">
-                  En descendant dans le jardin, vous pourrez accéder à la balançoire, aux arbres fruitiers (pommes, abricots, figues, pêches) et la piscine sécurisée, avec une douche solaire.
+                  Notre village médiéval de Marsanne saura vous accueillir, avec sa vie animée : trois cafés-restaurants-hôtels avec terrasse, une librairie et espace de co-working, une boulangerie, une épicerie et un marchand de journaux.
                   </p>
                 </div>
               </div>

@@ -1,8 +1,8 @@
 const MapSlider = () => {
 
-return (<div class="  overflow-hidden">
-  <div class="absolute inset-0 overflow-hidden">
-    <section class="absolute inset-y-0 right-0 pl-10 max-w-full flex sm:pl-16">
+return (<div class="  overflow-hidden flex md:block ">
+  <div class="md:absolute md:inset-0 md:overflow-hidden m-auto">
+    <section class="md:absolute md:inset-y-0 right-0 md:pl-10 max-w-full flex sm:pl-16">
       <div class="w-screen max-w-md">
         <div class="h-full flex flex-col bg-white shadow-xl overflow-y-scroll">
           <header class="p-6">
@@ -10,13 +10,6 @@ return (<div class="  overflow-hidden">
               <h2 class="text-lg leading-7 font-medium text-gray-900">
                 Bienvenue dans la drome 
               </h2>
-              <div class="h-7 flex items-center">
-                <button aria-label="Close panel" class="text-gray-400 hover:text-gray-500 transition ease-in-out duration-150">
-                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
             </div>
           </header>
           <div class="border-b border-gray-200">
@@ -58,12 +51,11 @@ return (<div class="  overflow-hidden">
                   <span class="absolute inset-0 group-hover:bg-gray-50"></span>
                   <div class="flex-1 flex items-center min-w-0 relative">
                     <span class="flex-shrink-0 inline-block relative">
-                      <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-                      <span class="absolute top-0 right-0 block h-2.5 w-2.5 rounded-full text-white shadow-solid bg-green-400"></span>
+                      <img class="h-10 w-10 rounded-full" src="https://la-foret-de-robin.com/wp-content/uploads/2017/02/foret-robin-logo.png" alt="" />
                     </span>
                     <div class="ml-4 truncate">
-                      <div class="text-sm leading-5 font-medium text-gray-900 truncate">Bob Schwartz</div>
-                      <div class="text-sm leading-5 text-gray-500 truncate">@bobschwartz</div>
+                      <div class="text-sm leading-5 font-medium text-gray-900 truncate">la foret de robin </div>
+                      <div class="text-sm leading-5 text-gray-500 truncate">Acrobranche à 5 minutes en voitures</div>
                     </div>
                   </div>
                 </a>

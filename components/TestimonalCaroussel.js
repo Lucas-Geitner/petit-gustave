@@ -19,20 +19,19 @@ const responsive = {
   }
 };
 
-const TestimonalCaroussel = (props) => {
+const TestimonalCaroussel = ({props, avisDesClients}) => {
 
 return (<Carousel
   swipeable={false}
   draggable={true}
-  showDots={false}
+  showDots={true}
   responsive={responsive}
   ssr={true}
   infinite={true}
   autoPlay={true}
-  autoPlaySpeed={1000}
+  autoPlaySpeed={5000}
   keyBoardControl={true}
   customTransition="all .5"
-  transitionDuration={500}
   containerClass="carousel-container"
   removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
   deviceType={props.deviceType}
@@ -40,10 +39,9 @@ return (<Carousel
   itemClass="carousel-item-padding-40-px"
 >
 
-  <Testimonial name="HELLO" />
-  <Testimonial  name="Wesh"/>
-  <Testimonial name="Test" />
-  <Testimonial name="Grrs" />
+  {avisDesClients.items.map(avi => {
+    return <Testimonial name={avi.fields.nomDuClient} img={avi.fields.photo.fields.file.url} date={avi.fields.dateDuVoyage} imgTitle={avi.fields.photo.fields.file.title} key={avi.sys.id} content={avi.fields.contenu}/>
+  })}
 
 </Carousel>)
 }

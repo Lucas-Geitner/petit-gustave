@@ -9,7 +9,7 @@ class Map extends Component {
       height: '70vh',
       latitude: 44.6436,
       longitude:  4.87306,
-      zoom: 8,
+      zoom: 9,
     }
   };
 
@@ -27,6 +27,9 @@ class Map extends Component {
         </Marker>
         <Marker latitude={44.3755} longitude={4.70314} offsetLeft={-20} offsetTop={-10}>
         <div className="text-2xl">🐊</div>
+        </Marker>
+        <Marker latitude={44.6436} longitude={4.87306} offsetLeft={-20} offsetTop={-30}>
+        <div className="text-2xl">🧗</div>
         </Marker>
         </ReactMapGL>
         <MapSlider />

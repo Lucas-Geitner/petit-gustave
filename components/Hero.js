@@ -1,4 +1,4 @@
-const Hero = () => {
+const Hero = ({header, setIsModalOpen}) => {
   return (
 <div class="relative pt-6 pb-16 md:pb-20 lg:pb-24 xl:pb-32">
 <div class="relative bg-white overflow-hidden">
@@ -6,24 +6,23 @@ const Hero = () => {
     <div class="lg:grid lg:grid-cols-12 lg:gap-8">
       <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
         <div class="text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base pb-3">
-          Maison entière
+          {header.fields.label}
         </div>
         <h2 className="text-4xl tracking-tighter leading-10 font-extrabold text-gray-700 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl font-mono">
-          Le petit {" "}
-          <span class="text-teal-400">Gustave</span>
+          Le petit {" "} 
+          <span class="text-gray-900">Gustave</span>
         </h2>
         <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-        Notre grande maison familiale que nous appelons entre nous le petit Gustave, vous accueille pour vos séjours en famille ou entre amis ! Le Petit Gustave peut accueillir de 8 à 14 personnes avec sa grande terrasse, son jardin avec piscine et balançoire, au coeur d'un village de caractère.&nbsp;
+        {header.fields.desc}
         </p>
         <div class="mt-5 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
         <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
           <div className="rounded-md shadow">
-            <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-xl leading-6 font-mono rounded-md text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:border-indigo-800 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+            <a href="#" onClick={() => setIsModalOpen(true)} className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-xl leading-6 font-mono rounded-md text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:border-indigo-800 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
               Réserver
             </a>
           </div>
         </div>
-
         </div>
       </div>
       <div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
@@ -38,7 +37,7 @@ const Hero = () => {
         </svg>
         <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
           <button type="button" class="relative block w-full rounded-lg overflow-hidden focus:outline-none focus:shadow-outline">
-            <img class="w-full" src="/images/video.gif" alt="Woman making a sale" />
+            <img class="w-full" src={header.fields.videoImage.fields.file.url} alt={header.fields.videoImage.fields.title} />
             <div class="absolute inset-0 w-full h-full flex items-center justify-center">
             </div>
           </button>
