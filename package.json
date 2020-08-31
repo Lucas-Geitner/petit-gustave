@@ -7,13 +7,16 @@
     "start": "next start"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^14.1.1",
     "@tailwindcss/ui": "^0.5.0",
+    "add": "^2.0.6",
     "contentful": "^7.14.6",
     "next": "latest",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-map-gl": "^5.2.7",
-    "react-multi-carousel": "^2.5.5"
+    "react-multi-carousel": "^2.5.5",
+    "yarn": "^1.22.5"
   },
   "devDependencies": {
     "postcss-flexbugs-fixes": "4.2.1",
