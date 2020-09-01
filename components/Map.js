@@ -1,13 +1,14 @@
 import { Component } from 'react';
 import ReactMapGL, {Marker} from 'react-map-gl';
 import MapSlider from "./MapSlider"
+import MapSliderLeft from "./MapSliderLeft"
 
 class Map extends Component {
   state = {
     viewport: {
       width: '100vw',
       height: '70vh',
-      latitude: 44.6436,
+      latitude: 44.6136,
       longitude:  4.87306,
       zoom: 9,
     }
@@ -32,7 +33,10 @@ class Map extends Component {
         <div className="text-2xl">🧗</div>
         </Marker>
         </ReactMapGL>
+        <MapSliderLeft />
+
         <MapSlider />
+
         </div>
     );
   }

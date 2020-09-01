@@ -18,7 +18,7 @@
 }
 
 .carousel-slider{
-  width: 35Opx;
+  width: 35Opx !important;
   @apply  relative mx-auto rounded;
 }
 

@@ -1,6 +1,8 @@
 import { Carousel } from 'react-responsive-carousel';
  
-const CarousselWithImage = () =>  {
+const CarousselWithImage = ({images}) =>  {
+    // console.log({images})
+    // console.log(images[0])
         return (
             <Carousel
                 autoPlay={true}
@@ -9,30 +11,14 @@ const CarousselWithImage = () =>  {
                 showIndicators={false}
                 showStatus={false}
                 swipeable={true}
-
+                width="490px"
             >
-                <div className="relative mx-auto rounded">
-                    <img src="https://a0.muscache.com/im/pictures/87218833/77d315df_original.jpg?aki_policy=xx_large" width="490"/>
+                {images.map(im => (
+                <div className="relative mx-auto rounded" key={im?.sys?.id}>
+                    <img src={im?.fields?.file?.url} width="490" alt={im?.fields?.title}/>
                 </div>
-                <div className="relative mx-auto rounded">
-                    <img src="https://picsum.photos/id/1018/1000/600/" width="490" />
-                </div>
-                <div className="relative mx-auto rounded" width="490">
-                    <img src="https://picsum.photos/id/1019/1000/600/" width="490" />
-                </div>
-                <div className="relative mx-auto rounded">
-                    <img src="https://a0.muscache.com/im/pictures/87218833/77d315df_original.jpg?aki_policy=xx_large" width="490"/>
-                </div>
-                <div className="relative mx-auto rounded">
-                    <img src="https://picsum.photos/id/1018/1000/600/" width="490" />
-                </div>
-                <div className="relative mx-auto rounded" width="490">
-                    <img src="https://picsum.photos/id/1019/1000/600/" width="490" />
-                </div>
-                <div className="relative mx-auto rounded">
-                    <img src="https://a0.muscache.com/im/pictures/87218833/77d315df_original.jpg?aki_policy=xx_large" width="490"/>
-                </div>
-
+                
+                ))}
             </Carousel>
         );
 }

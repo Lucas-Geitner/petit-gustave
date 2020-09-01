@@ -32,15 +32,15 @@ return (<Carousel
   autoPlaySpeed={5000}
   keyBoardControl={true}
   customTransition="all .5"
-  containerClass="carousel-container"
+  containerclassName="carousel-container"
   removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
   deviceType={props.deviceType}
-  dotListClass="custom-dot-list-style"
-  itemClass="carousel-item-padding-40-px bg-lavande-20"
+  dotListclassName="custom-dot-list-style"
+  itemclassName="carousel-item-padding-40-px bg-lavande-20"
 >
 
   {avisDesClients.items.map(avi => {
-    return <Testimonial name={avi.fields.nomDuClient} img={avi.fields.photo.fields.file.url} date={avi.fields.dateDuVoyage} imgTitle={avi.fields.photo.fields.file.title} key={avi.sys.id} content={avi.fields.contenu}/>
+    return <Testimonial name={avi?.fields?.nomDuClient} date={avi.fields.dateDuVoyage} id={avi.sys.id} content={avi.fields.contenu} key={avi.sys.id}/>
   })}
 
 </Carousel>)
