@@ -16,6 +16,12 @@
   text-indent: -999px;
   position: absolute;
 }
+
+.carousel-slider{
+  width: 35Opx;
+  @apply  relative mx-auto rounded;
+}
+
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */

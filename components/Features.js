@@ -1,3 +1,5 @@
+import ImageGallery from "./ImageGallery"
+
 const Features = () => {
     return(
 <div className="py-16 bg-lavande-20 overflow-hidden lg:py-24">
@@ -92,7 +94,11 @@ const Features = () => {
           </defs>
           <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
         </svg>
-        <img className="relative mx-auto rounded" width="490" src="https://a0.muscache.com/im/pictures/87218833/77d315df_original.jpg?aki_policy=xx_large" alt="" />
+        <div>
+          <ImageGallery  />
+        </div>
+
+        {/* <img className="relative mx-auto rounded" width="490" src="https://a0.muscache.com/im/pictures/87218833/77d315df_original.jpg?aki_policy=xx_large" alt="" /> */}
       </div>
     </div>
 
@@ -166,7 +172,8 @@ const Features = () => {
             </defs>
             <rect width="784" height="404" fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
           </svg>
-          <img className="relative mx-auto rounded" width="490" src="https://a0.muscache.com/im/pictures/87219499/dd199380_original.jpg?aki_policy=large" alt="" />
+          <ImageGallery  />
+          {/* <img className="relative mx-auto rounded" width="490" src="https://a0.muscache.com/im/pictures/87219499/dd199380_original.jpg?aki_policy=large" alt="" /> */}
         </div>
       </div>
     </div>
