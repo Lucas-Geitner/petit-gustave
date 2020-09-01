@@ -1,6 +1,6 @@
 const Features = () => {
     return(
-<div className="py-16 bg-gray-50 overflow-hidden lg:py-24">
+<div className="py-16 bg-lavande-20 overflow-hidden lg:py-24">
   <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
     <svg className="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4" width="404" height="784" fill="none" viewBox="0 0 404 784">
       <defs>
@@ -124,8 +124,9 @@ const Features = () => {
               <div className="flex">
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center h-12 w-12 rounded-md text-gray-700">
-                    <svg className="h-6 w-6" fill="none" viewBox="0 0 32 32" stroke="currentColor">
-                    <path d="M27 3a2 2 0 0 1 1.995 1.85L29 5l-.001 14.816 2.43 6.482a2 2 0 0 1-.881 2.44l-.145.074-.144.06a2 2 0 0 1-.523.12l-.179.008H2.443a2 2 0 0 1-1.928-2.532l.055-.17L3 19.819 3 5a2 2 0 0 1 1.697-1.977l.154-.018L5 3zm.306 18H4.692l-2.249 6h27.114zM19 23v2h-6v-2zm8-18H5l-.001 14h22zM16 7a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>                    </svg>
+                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
+                    </svg>
                   </div>
                 </div>
                 <div className="ml-4">
@@ -141,12 +142,12 @@ const Features = () => {
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center h-12 w-12 rounded-md text-gray-700">
                     <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                     </svg>
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h5 className="text-xl leading-6 font-bold text-gray-900 font-mono ">Faite tout à pieds</h5>
+                  <h5 className="text-xl leading-6 font-bold text-gray-900 font-mono ">Déplacer vous tout à pieds</h5>
                   <p className="mt-2 text-base leading-6 text-gray-500">
                   Notre village médiéval de Marsanne saura vous accueillir, avec sa vie animée : trois cafés-restaurants-hôtels avec terrasse, une librairie et espace de co-working, une boulangerie, une épicerie et un marchand de journaux.
                   </p>

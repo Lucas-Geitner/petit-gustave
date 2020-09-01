@@ -6,7 +6,7 @@ class CustomDocument extends Document {
     return (
       <html lang="en">
         <Head>
-        <link rel="shortcut icon" href="/images/favicon.png" />
+        <link rel="shortcut icon" href="/images/favicon-dark.png" />
           <link
             href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,600;1,700&display=swap"
             rel="stylesheet"

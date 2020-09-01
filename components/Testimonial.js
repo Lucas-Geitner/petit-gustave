@@ -1,5 +1,32 @@
 const Testimonial = ({name, img, key ,content, date}) => {
 
+
+  return(
+    <section class="py-12 bg-lavande-20 overflow-hidden md:py-10 lg:pt-4">
+    <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-4">
+      <div class="relative">
+        <blockquote class="mt-8">
+          <div class={`max-w-3xl mx-auto text-center  leading-9 font-medium text-gray-900 ${content.length < 150 ?  "text-lg" : "text-base"}` }>
+            <p>
+            &ldquo;{content}&rdquo;
+            </p>
+          </div>
+          <footer class="mt-8">
+            <div class="md:flex md:items-center md:justify-center">
+              <div class="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
+                <div class="text-base leading-6 font-medium text-gray-900">{name}</div>
+                <svg class="hidden md:block mx-1 h-5 w-5 text-lavande-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M11 0h3L9 20H6l5-20z" />
+                </svg>
+                <div class="text-base leading-6 font-medium text-gray-500">{date}</div>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+</section>
+  )
 return (
 <section className="bg-white overflow-hidden" key={key}>
   <div className="relative max-w-screen-xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20">

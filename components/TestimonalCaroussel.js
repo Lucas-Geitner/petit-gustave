@@ -36,7 +36,7 @@ return (<Carousel
   removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
   deviceType={props.deviceType}
   dotListClass="custom-dot-list-style"
-  itemClass="carousel-item-padding-40-px"
+  itemClass="carousel-item-padding-40-px bg-lavande-20"
 >
 
   {avisDesClients.items.map(avi => {

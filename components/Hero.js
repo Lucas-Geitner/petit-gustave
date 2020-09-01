@@ -21,7 +21,7 @@ const Hero = ({header, setIsModalOpen}) => {
         <div class="mt-5 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
         <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
           <div className="rounded-md shadow">
-            <a href="#" onClick={() => setIsModalOpen(true)} className="w-full font-semibold  flex items-center justify-center px-8 py-3 border border-transparent text-2xl leading-6 font-mono rounded-md text-white bg-lavande-800 hover:bg-lavande-900 focus:outline-none focus:border-indigo-800 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-2xl md:px-10">
+            <a href="#" onClick={() => setIsModalOpen(true)} className="w-full font-semibold flex items-center justify-center px-8 py-3 border border-transparent text-2xl leading-6 font-mono rounded-md text-white bg-lavande-800 hover:bg-lavande-900 focus:outline-none focus:border-indigo-800 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-2xl md:px-10">
               Réserver
             </a>
           </div>

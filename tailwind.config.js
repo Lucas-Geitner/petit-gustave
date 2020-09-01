@@ -13,6 +13,8 @@ module.exports = {
         mono: ["Josefin Slab", ...defaultTheme.fontFamily.mono]
       },
       colors: {
+        "lavande-20": "#F7F5F9",
+        "lavande-50": "#F2EFF5",
         "lavande-100": "#E6DFEC",
         "lavande-200": "#D9CFE2",
         "lavande-300": "#CCBED8",

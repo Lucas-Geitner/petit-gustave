@@ -5,7 +5,7 @@ return (<div class="bg-gray-50">
     <h2 class="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10 font-mono">
       Toutes les questions que vous pouvez vous poser
     </h2>
-    <div class="mt-6 border-t-2 border-gray-200 pt-6">
+    <div class="mt-6 border-t-2 border-bles-400 pt-6">
       <dl>
       {faq.items.map((fa) => {
         return (

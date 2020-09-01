@@ -9,7 +9,7 @@ return(
   <div class="pt-12 sm:pt-16 lg:pt-24">
     <div class="max-w-screen-xl mx-auto text-center px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto space-y-2 lg:max-w-none">
-        <h2 class="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider font-mono">
+        <h2 class="text-lg leading-6 font-semibold text-bles-300 uppercase tracking-wider font-mono">
           Nos offres
         </h2>
         <p class="text-3xl leading-9 font-extrabold text-white sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none font-mono">
@@ -29,7 +29,7 @@ return(
           <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
             <div class="px-6 py-8 bg-white sm:p-10 sm:pb-6">
               <div>
-                <h3 class="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600" id="tier-standard">
+                <h3 class="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-lavande-50 text-lavande-800" id="tier-standard">
                 Haute saison - 8 places
                 </h3>
               </div>
@@ -100,7 +100,7 @@ return(
           <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
             <div class="px-6 py-8 bg-white sm:p-10 sm:pb-6">
               <div>
-                <h3 class="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600" id="tier-standard">
+                <h3 class="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase bg-lavande-50 text-lavande-800" id="tier-standard">
                   Haute saison - 14 places
                 </h3>
               </div>
