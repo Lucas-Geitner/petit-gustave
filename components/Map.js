@@ -3,6 +3,7 @@ import ReactMapGL, {Marker} from 'react-map-gl';
 import MapSlider from "./MapSlider"
 import MapSliderLeft from "./MapSliderLeft"
 
+
 class Map extends Component {
   state = {
     viewport: {
@@ -15,6 +16,9 @@ class Map extends Component {
   };
 
   render() {
+
+    const activitesExterieur = this.props?.activitesExterieur
+    console.log(activitesExterieur)
     return (
       <div className="relative">
       <ReactMapGL
@@ -23,19 +27,23 @@ class Map extends Component {
         onViewportChange={(viewport) => this.setState({ viewport })}
         {...this.state.viewport}
       >
+        
+        
         <Marker latitude={44.6436} longitude={4.87306} offsetLeft={-20} offsetTop={-10}>
           <div className="text-2xl">🏠</div>
         </Marker>
-        <Marker latitude={44.3755} longitude={4.70314} offsetLeft={-20} offsetTop={-10}>
-        <div className="text-2xl">🐊</div>
-        </Marker>
-        <Marker latitude={44.6436} longitude={4.87306} offsetLeft={-20} offsetTop={-30}>
-        <div className="text-2xl">🧗</div>
-        </Marker>
+
+
+        {activitesExterieur.items.map(act => (
+          <Marker latitude={act.fields.location.lat} longitude={act.fields.location.lon} offsetLeft={-20} offsetTop={-10} key={act.sys.id}>
+          <div className="text-2xl">🏇🏻</div>
+          </Marker>          
+        ))}
+
         </ReactMapGL>
         <MapSliderLeft />
 
-        <MapSlider />
+        <MapSlider activitesExterieur={activitesExterieur} />
 
         </div>
     );

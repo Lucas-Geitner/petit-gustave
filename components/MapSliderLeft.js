@@ -8,7 +8,7 @@ const MapSlider = () => {
               <header className="p-6">
                 <div className="flex items-start justify-between space-x-3">
                   <h2 className="text-lg leading-7 font-medium text-gray-900">
-                    Tout les chemins mènent à petit Gustave
+                    Tous les chemins mènent au petit Gustave
                   </h2>
                 </div>
               </header>
@@ -21,7 +21,7 @@ const MapSlider = () => {
                   <div className="group  space-x-2">
                       <h4 className="text-sm leading-5 font-medium text-gray-900">Paris</h4>
                         <p className="text-sm leading-5 text-gray-500">
-                        🚇 2 heures 45 de train
+                        🚇{" "}train: 2 heures 45
                         </p>
                   </div>
                 </li>
@@ -29,7 +29,7 @@ const MapSlider = () => {
                   <div className="group  space-x-2">
                       <h4 className="text-sm leading-5 font-medium text-gray-900">Grenoble</h4>
                         <p className="text-sm leading-5 text-gray-500">
-                        🚗 1 heure 35 de voiture
+                        🚗{" "}voiture:  1 heure 35 
                         </p>
                   </div>
                 </li>
@@ -37,10 +37,10 @@ const MapSlider = () => {
                   <div className="group  space-x-2">
                       <h4 className="text-sm leading-5 font-medium text-gray-900">Lyon</h4>
                         <p className="text-sm leading-5 text-gray-500">
-                        🚗 1 heure 42 de voiture
+                        🚗{" "}voiture: 1 heure 42
                         </p>
                         <p className="text-sm leading-5 text-gray-500">
-                        🚇 1 heure 30 de train
+                        🚇{" "}train: 1 heure 30
                         </p>
                   </div>
                 </li>
@@ -48,7 +48,7 @@ const MapSlider = () => {
                   <div className="group  space-x-2">
                       <h4 className="text-sm leading-5 font-medium text-gray-900">Marseille</h4>
                         <p className="text-sm leading-5 text-gray-500">
-                        🚗 2 heures de voiture
+🚗{" "}voiture: 2 heures 
                         </p>
                   </div>
                 </li>

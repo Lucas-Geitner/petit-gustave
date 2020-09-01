@@ -18,7 +18,7 @@ const client = require('contentful').createClient({
   accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN
 })
 
-export default function IndexPage({header, avisDesClients, faq, carrousel, argument}, props) {
+export default function IndexPage({header, avisDesClients, faq, carrousel, argument, activitesExterieur}, props) {
   const [isModalOpen, setIsModalOpen] = useState(false)
   
   return (
@@ -26,7 +26,7 @@ export default function IndexPage({header, avisDesClients, faq, carrousel, argum
         <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
         <Hero header={header} setIsModalOpen={setIsModalOpen} />
         <Features  carrousel={carrousel} argument={argument}/>
-        <Map />
+        <Map activitesExterieur={activitesExterieur}/>
         <PetitPlus />
         <TestimonalCaroussel props={props} avisDesClients={avisDesClients}/>
         <Pricing setIsModalOpen={setIsModalOpen} />
@@ -66,6 +66,10 @@ export async function getStaticProps() {
 
   const argument = argumentsRequest.items[0]
 
+  const activitesExterieur = await client.getEntries({
+    content_type: "activite-exterieur"
+  })
+
 
   // faq
   return {
@@ -74,7 +78,8 @@ export async function getStaticProps() {
       avisDesClients,
       faq,
       carrousel,
-      argument
+      argument,
+      activitesExterieur
     },
   }
 }
