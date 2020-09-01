@@ -5,20 +5,23 @@ const Hero = ({header, setIsModalOpen}) => {
   <main class="mt-8 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-20 xl:mt-24">
     <div class="lg:grid lg:grid-cols-12 lg:gap-8">
       <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
-        <div class="text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base pb-3">
+        <div class="text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base ">
           {header.fields.label}
         </div>
-        <h2 className="text-4xl tracking-tighter leading-10 font-extrabold text-gray-700 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl font-mono">
+        <div className="flex items-baseline sm:justify-center lg:justify-start ">
+        <h1 className="text-4xl tracking-tighter leading-10 font-extrabold text-gray-700 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl font-mono">
           Le petit {" "} 
-          <span class="text-gray-900">Gustave</span>
-        </h2>
+          <span class="bles-400 title">Gustave</span>
+        </h1>
+          <img className="pl-4" src="/images/logoBold.png" alt="Logo gustave"></img>
+        </div>
         <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
         {header.fields.desc}
         </p>
         <div class="mt-5 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
         <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
           <div className="rounded-md shadow">
-            <a href="#" onClick={() => setIsModalOpen(true)} className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-xl leading-6 font-mono rounded-md text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:border-indigo-800 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+            <a href="#" onClick={() => setIsModalOpen(true)} className="w-full font-semibold  flex items-center justify-center px-8 py-3 border border-transparent text-2xl leading-6 font-mono rounded-md text-white bg-lavande-800 hover:bg-lavande-900 focus:outline-none focus:border-indigo-800 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-2xl md:px-10">
               Réserver
             </a>
           </div>
