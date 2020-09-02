@@ -1,5 +1,10 @@
-const PetitPlus = () => {
-
+const PetitPlus = ({petitPlus}) => {
+const atitle = petitPlus?.fields?.atitle
+const adescription = petitPlus?.fields?.aDescription
+const btitle = petitPlus?.fields?.bTitle
+const bDescription = petitPlus?.fields?.bDescription
+const cTitle = petitPlus?.fields?.cTitle
+const cDescription = petitPlus?.fields?.cDescription
 
 return (<div className="py-12 bg-white">
   <div className="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-screen-xl lg:px-8">
@@ -11,9 +16,9 @@ return (<div className="py-12 bg-white">
           </svg>
         </div>
         <div className="mt-5">
-          <h5 className="text-xl leading-6 font-bold text-gray-900 font-mono">Les plus du Petit Gustave</h5>
+          <h5 className="text-xl leading-6 font-bold text-gray-900 font-mono">{atitle}</h5>
           <p className="mt-2 text-base leading-6 text-gray-500">
-          Quand vous arrivez, les lits sont faits et un diner de produits locaux vous attendent dans le réfrigérateur : caillettes, ravioles, picodon, fruits et bouteille de vin de Côte du Rhône. Vous n'avez plus qu'à plonger dans la piscine.
+            {adescription}
           </p>
         </div>
       </div>
@@ -24,10 +29,8 @@ return (<div className="py-12 bg-white">
           </svg>
         </div>
         <div className="mt-5">
-          <h5 className="text-xl leading-6 font-bold text-gray-900 font-mono">Accès des voyageurs</h5>
-          <p className="mt-2 text-base leading-6 text-gray-500">
-          Toute la partie louée (maison, jardin et piscine) est privative.
-            Une chambre avec sa salle d'eau est adaptée aux personnes à mobilité réduite et donne accès à la cuisine, au grand salon et à la terrasse.          </p>
+          <h5 className="text-xl leading-6 font-bold text-gray-900 font-mono">{btitle}</h5>
+          <p className="mt-2 text-base leading-6 text-gray-500">{bDescription}</p>
         </div>
       </div>
       <div className="mt-10 lg:mt-0">
@@ -37,9 +40,9 @@ return (<div className="py-12 bg-white">
           </svg>
         </div>
         <div className="mt-5">
-          <h5 className="text-xl leading-6 font-bold text-gray-900 font-mono">Pas de bouchon</h5>
+          <h5 className="text-xl leading-6 font-bold text-gray-900 font-mono">{cTitle}</h5>
           <p className="mt-2 text-base leading-6 text-gray-500">
-          Notre maison est louée du dimanche au dimanche pour éviter les bouchons des samedis noirs sur l'A7 !&nbsp;;-)
+            {cDescription}
           </p>
         </div>
       </div>
