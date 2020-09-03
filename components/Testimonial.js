@@ -1,11 +1,11 @@
 const Testimonial = ({name, id ,content, date}) => {
 
   return(
-    <section className="py-12 bg-lavande-20 overflow-hidden md:py-10 lg:pt-4" key={id}>
-    <div className="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-4">
-      <div className="relative">
+    <section className="py-12 bg-lavande-20 overflow-hidden md:py-10 lg:pt-4 flex h-full items-center" key={id}>
+    <div className="relative max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-4">
+      <div className="relative flex">
         <blockquote className="mt-8">
-          <div className={`max-w-3xl mx-auto text-center  leading-9 font-medium text-gray-900 ${content.length < 150 ?  "text-lg" : "text-base"}` }>
+          <div className={`max-w-3xl mx-auto text-center leading-9 font-medium text-gray-900 ${content.length < 150 ?  "text-base" : "text-sm"}` }>
             <p>
             &ldquo;{content}&rdquo;
             </p>

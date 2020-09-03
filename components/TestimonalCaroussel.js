@@ -28,7 +28,7 @@ return (<Carousel
   responsive={responsive}
   ssr={true}
   infinite={true}
-  autoPlay={true}
+  autoPlay={false}
   autoPlaySpeed={5000}
   keyBoardControl={true}
   customTransition="all .5"

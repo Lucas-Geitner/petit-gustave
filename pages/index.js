@@ -28,7 +28,9 @@ export default function IndexPage({header, avisDesClients, faq, carrousel, argum
         <Features  carrousel={carrousel} argument={argument}/>
         <Map activitesExterieur={activitesExterieur}/>
         <PetitPlus petitPlus={petitPlus}/>
-        <TestimonalCaroussel props={props} avisDesClients={avisDesClients}/>
+        <div className="bg-lavande-20">
+          <TestimonalCaroussel props={props} avisDesClients={avisDesClients}/>
+        </div>
         <Pricing setIsModalOpen={setIsModalOpen} />
         <FAQ faq={faq}/>
 
