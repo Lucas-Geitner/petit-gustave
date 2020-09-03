@@ -34,11 +34,16 @@ class Map extends Component {
         </Marker>
 
 
-        {activitesExterieur.items.map(act => (
-          <Marker latitude={act.fields.location.lat} longitude={act.fields.location.lon} offsetLeft={-20} offsetTop={-10} key={act.sys.id}>
-          <div className="text-2xl">🏇🏻</div>
-          </Marker>          
-        ))}
+        {activitesExterieur.items.map(act => {
+          if(!act?.fields?.location?.lat){
+            return null
+          }
+          return (
+            <Marker latitude={act?.fields?.location?.lat} longitude={act?.fields?.location?.lon} offsetLeft={-20} offsetTop={-10} key={act.sys.id}>
+              <div className="text-2xl">🏇🏻</div>
+            </Marker>          
+          )}
+        )}
 
         </ReactMapGL>
         <MapSliderLeft />
