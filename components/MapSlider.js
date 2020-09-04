@@ -1,8 +1,8 @@
 const MapSlider = ({activitesExterieur}) => {
 
-return (<div className="  overflow-hidden flex md:block ">
-  <div className="md:absolute md:inset-0 md:overflow-hidden m-auto">
-    <section className="md:absolute md:inset-y-0 right-0 md:pl-10 max-w-full flex sm:pl-16">
+return (<div className="  flex md:block ">
+  <div className=" md:overflow-hidden m-auto">
+    <section className="max-w-full flex ">
       <div className="w-screen max-w-md">
         <div className="h-full flex flex-col bg-white shadow-xl overflow-y-scroll">
           <header className="p-6">

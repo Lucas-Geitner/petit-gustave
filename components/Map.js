@@ -7,7 +7,7 @@ import MapSliderLeft from "./MapSliderLeft"
 class Map extends Component {
   state = {
     viewport: {
-      width: '100vw',
+      width: '100%',
       height: '70vh',
       latitude: 44.6136,
       longitude:  4.87306,
@@ -20,14 +20,15 @@ class Map extends Component {
     const activitesExterieur = this.props?.activitesExterieur
     console.log(activitesExterieur)
     return (
-      <div className="relative">
+      <div className="relative flex">
+      <MapSliderLeft />
+
       <ReactMapGL
         mapStyle="mapbox://styles/lucasgeitner2/ckefibuyf1wfo19qqd5yvwbkb"
         mapboxApiAccessToken="pk.eyJ1IjoibHVjYXNnZWl0bmVyMiIsImEiOiJja2VmaDZqb3QwcWQxMzVudHpxY3N0ODIwIn0.yDemqpaywa4rkrspsI6RBA"
         onViewportChange={(viewport) => this.setState({ viewport })}
         {...this.state.viewport}
       >
-        
         
         <Marker latitude={44.6436} longitude={4.87306} offsetLeft={-20} offsetTop={-10}>
           <div className="text-2xl">🏠</div>
@@ -46,7 +47,6 @@ class Map extends Component {
         )}
 
         </ReactMapGL>
-        <MapSliderLeft />
 
         <MapSlider activitesExterieur={activitesExterieur} />
 

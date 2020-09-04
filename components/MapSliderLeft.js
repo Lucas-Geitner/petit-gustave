@@ -1,8 +1,8 @@
 const MapSlider = () => {
 
-    return (<div className=" overflow-hidden flex md:block pb-20 sm:pb-0 ">
-      <div className="md:absolute md:inset-0 md:overflow-hidden m-auto">
-        <section className="md:absolute md:inset-y-0 left-0 md:pr-10 max-w-full flex">
+    return (<div className="flex md:block pb-20 sm:pb-0  ">
+      <div className="  md:overflow-hidden m-auto">
+        <section className=" max-w-full flex">
           <div className="w-screen max-w-md">
             <div className="h-full flex flex-col bg-white shadow-xl overflow-y-scroll ">
               <header className="p-6">
