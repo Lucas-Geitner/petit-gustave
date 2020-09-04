@@ -20,7 +20,7 @@ class Map extends Component {
     const activitesExterieur = this.props?.activitesExterieur
     console.log(activitesExterieur)
     return (
-      <div className="relative flex">
+      <div className="relative flex" id="venir">
       <MapSliderLeft />
 
       <ReactMapGL

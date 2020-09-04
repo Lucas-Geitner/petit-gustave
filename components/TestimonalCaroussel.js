@@ -21,7 +21,14 @@ const responsive = {
 
 const TestimonalCaroussel = ({props, avisDesClients}) => {
 
-return (<Carousel
+return (
+  <>
+  <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+  <h3 className="text-center font-mono text-4xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+ Ce que pense les gens qui sont venus
+    </h3>
+  </div>
+    <Carousel
   swipeable={true}
   draggable={true}
   showDots={true}
@@ -43,7 +50,8 @@ return (<Carousel
     return <Testimonial name={avi?.fields?.nomDuClient} date={avi.fields.dateDuVoyage} id={avi.sys.id} content={avi.fields.contenu} key={avi.sys.id}/>
   })}
 
-</Carousel>)
+</Carousel>
+</>)
 }
 
 

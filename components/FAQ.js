@@ -1,7 +1,7 @@
 const FAQ = ({faq}) => { 
 // console.log({faq})
 return (<div className="bg-gray-50">
-  <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+  <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8" id="faq">
     <h2 className="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10 font-mono">
       Toutes les questions que vous pouvez vous poser
     </h2>

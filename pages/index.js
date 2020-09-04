@@ -8,6 +8,7 @@ import FAQ from "../components/FAQ.js"
 import dynamic from 'next/dynamic';
 import TestimonalCaroussel from "../components/TestimonalCaroussel"
 import Modal from "../components/Modal"
+import Footer from "../components/Footer"
 
 const Map = dynamic(() => import('../components/Map'), {
   ssr: false
@@ -33,6 +34,7 @@ export default function IndexPage({header, avisDesClients, faq, carrousel, argum
         </div>
         <Pricing setIsModalOpen={setIsModalOpen} />
         <FAQ faq={faq}/>
+        <Footer />
 
     </div>
   )

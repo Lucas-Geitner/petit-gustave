@@ -127,7 +127,7 @@ return(
             </defs>
             <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
           </svg>
-          <div className="md:ml-15 md:pt-20">
+          <div className="md:ml-15 md:pt-20" id="lamaison">
             <ImageGallery images={lamaison?.fields?.image} />
           </div>
 
@@ -150,7 +150,7 @@ return(
       <div className="relative mt-12 sm:mt-16 lg:mt-24">
         <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div className="lg:col-start-2">
-            <h4 className="text-2xl leading-8 font-mono font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
+            <h4 className="text-2xl leading-8 font-mono font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9" id="emplacement">
               {titre}
             </h4>
             <p className="mt-3 text-lg leading-7 text-gray-500">

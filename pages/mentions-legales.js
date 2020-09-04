@@ -1,10 +1,12 @@
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import Content from "../components/Content"
+import Modal from "../components/Modal"
+import {useState} from "react"
 import Link from "next/link"
+const MentionLegale = () => {
 
-const Content = ({ficheTechnique, setIsModalOpen}) => {
-    const Doc = documentToReactComponents(ficheTechnique.fields.content);
     return(
-<div className="relative py-16 bg-white overflow-hidden">
+    <>
+    <div className="relative py-16 bg-white overflow-hidden">
   <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
     <div className="relative h-full text-lg max-w-prose mx-auto">
       <svg className="absolute top-12 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
@@ -36,11 +38,24 @@ const Content = ({ficheTechnique, setIsModalOpen}) => {
 
   <div className="relative px-4 sm:px-6 lg:px-8">
     <div className="text-lg max-w-prose mx-auto mb-6">
-        <p className="text-base text-center leading-6 text-bles-400 font-semibold tracking-wide uppercase">{ficheTechnique.fields.label}</p>
-        <h1 className="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">{ficheTechnique.fields.title}</h1>
+        <p className="text-base text-center leading-6 text-bles-400 font-semibold tracking-wide uppercase">information Juridique</p>
+        <h1 className="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">Mentions légales</h1>
     </div>
     <div className="prose prose-lg text-gray-500 mx-auto">
-    {Doc}
+    <h3>
+    Editeur
+    </h3>
+    <p>
+    Lucas Geitner
+    </p>
+<h3 >Directrice et direteurs de la publication</h3>
+    <p>Léna & Ghislain & Lucas Geitner</p>
+    <h3 >Hébergement</h3>
+    <p>
+Ce site est hébergé chez vercel.com. Qui héberge eux même leurs données chez des serveurs d'Amazon France.</p>
+<h3 >Cookies</h3>
+Les cookies sont de petites quantités d'informations stockées dans des fichiers au sein même du navigateur de votre ordinateur. En utilisant les Sites Internet de maison-en-provence.net, vous consentez à l'utilisation des cookies déposés par notre Site pour compter le nombre de personne qui viennent le visiter. Nous utilisons Google Analytique pour savoir combien de personnes, de manière anonyme, vont sur notre site, Vous pouvez le désactiver en utilisant un petit logiciel tel que Ghosterie => https://www.ghostery.com/fr/
+
     <div className="bg-white">
         <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 md:py-16 lg:px-8 lg:py-20">
             <h2 className="text-3xl leading-9 font-extrabold tracking-normal text-gray-900 sm:text-4xl sm:leading-10 font-mono">
@@ -67,7 +82,8 @@ const Content = ({ficheTechnique, setIsModalOpen}) => {
     </div>
   </div>
 </div>
-)
+    </>
+    )
 }
 
-export default Content
+export default MentionLegale
