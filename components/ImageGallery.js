@@ -7,6 +7,7 @@ const CarousselWithImage = ({images}) =>  {
             <Carousel
                 autoPlay={true}
                 infiniteLoop={true}
+                emulateTouch={true}
                 showArrows={false}
                 showIndicators={false}
                 showStatus={false}

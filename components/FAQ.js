@@ -7,19 +7,36 @@ return (<div className="bg-gray-50">
     </h2>
     <div className="mt-6 border-t-2 border-bles-400 pt-6">
       <dl>
-      {faq.items.map((fa) => {
-        return (
-          <div className="md:grid md:grid-cols-12 md:gap-8" key={fa.sys.id}>
-          <dt className="text-base leading-6 font-medium text-gray-900 md:col-span-5">
+      {faq.items.map((fa, index) => {
+
+        if(index == 0){
+          return (
+            <div className="md:grid md:grid-cols-12 md:gap-8" key={fa.sys.id}>
+            <dt className="text-base leading-6 font-medium text-gray-900 md:col-span-5">
+              {fa.fields.question}
+            </dt>
+            <dd className="mt-2 md:mt-0 md:col-span-7">
+              <p className="text-base leading-6 text-gray-500">
+              {fa.fields.rponse}
+              </p>
+            </dd>
+          </div>
+          )
+          }
+
+          return(
+            <div className="mt-8 border-t border-gray-200 pt-6 md:grid md:grid-cols-12 md:gap-8">
+            <dt className="text-base leading-6 font-medium text-gray-900 md:col-span-5">
             {fa.fields.question}
-          </dt>
-          <dd className="mt-2 md:mt-0 md:col-span-7">
-            <p className="text-base leading-6 text-gray-500">
-            {fa.fields.rponse}
-            </p>
-          </dd>
-        </div>
-        )
+            </dt>
+            <dd className="mt-2 md:mt-0 md:col-span-7">
+              <p className="text-base leading-6 text-gray-500">
+              {fa.fields.rponse}
+              </p>
+            </dd>
+          </div>
+  
+          )
       })}
       </dl>
     </div>
