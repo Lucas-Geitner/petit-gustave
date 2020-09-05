@@ -8,7 +8,7 @@ return (<div className="  flex md:block ">
           <header className="p-6">
             <div className="flex items-start justify-between space-x-3">
               <h2 className="text-lg leading-7 font-medium text-gray-900">
-                Bienvenue dans la drome 
+                Bienvenue dans la drôme 
               </h2>
             </div>
           </header>

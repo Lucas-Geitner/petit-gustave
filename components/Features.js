@@ -111,7 +111,7 @@ return(
           <div className="max-w-screen-xl mx-auto pl-15 pt-10">
           <Link href="/fiche-technique">
                 <button type="button" className="inline-flex items-center px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-lavande-800 bg-lavande-100 hover:bg-lavande-200 focus:outline-none focus:border-indigo-800 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
-                Voir la fiche technique
+                La maison pas à pas
                 </button>
           </Link>
           </div>
@@ -150,7 +150,7 @@ return(
       <div className="relative mt-12 sm:mt-16 lg:mt-24">
         <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div className="lg:col-start-2">
-            <h4 className="text-2xl leading-8 font-mono font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9" id="emplacement">
+            <h4 className="text-2xl leading-8 font-mono font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9" >
               {titre}
             </h4>
             <p className="mt-3 text-lg leading-7 text-gray-500">

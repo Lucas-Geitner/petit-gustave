@@ -8,7 +8,7 @@ const MapSlider = () => {
               <header className="p-6">
                 <div className="flex items-start justify-between space-x-3">
                   <h2 className="text-lg leading-7 font-medium text-gray-900">
-                    Tous les chemins mènent au petit Gustave
+                  Tous les chemins mènent à la maison
                   </h2>
                 </div>
               </header>
@@ -21,7 +21,7 @@ const MapSlider = () => {
                   <div className="group  space-x-2">
                       <h4 className="text-sm leading-5 font-medium text-gray-900">Paris</h4>
                         <p className="text-sm leading-5 text-gray-500">
-                        🚇{" "}train: 2 heures 45
+                        🚇{" "}tgv: 2 heures 45
                         </p>
                   </div>
                 </li>
@@ -40,7 +40,7 @@ const MapSlider = () => {
                         🚗{" "}voiture: 1 heure 42
                         </p>
                         <p className="text-sm leading-5 text-gray-500">
-                        🚇{" "}train: 1 heure 30
+                        🚇{" "}tgv: 1 heure 30
                         </p>
                   </div>
                 </li>

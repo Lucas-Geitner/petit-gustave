@@ -50,14 +50,7 @@ return(
               Vous pouvez nous joindre au +336 27 46 54 55 ou sur l'adresse e-mail ggeitner@laposte.net
             </p>
           </div>
-          <div className="pt-10">
-          <h3 className="text-lg leading-6 font-medium text-gray-900" id="modal-headline">
-            Nos disponibilités
-          </h3>
-          <div className="pt-5">
-              <Horaire/>
-              </div>
-          </div>
+ 
         </div>
       </div>
       <div className="mt-5 sm:mt-6" onClick={() => setIsModalOpen(false)}>
@@ -71,4 +64,12 @@ return(
   </div>
 </div>)}
 
+//          {/* <div className="pt-10">
+// {/* <h3 className="text-lg leading-6 font-medium text-gray-900" id="modal-headline">
+// Nos disponibilités
+// </h3>
+// <div className="pt-5">
+//   {/* <Horaire/> */}
+//   </div>
+// </div> */} */}
 export default Modal

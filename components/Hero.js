@@ -81,7 +81,7 @@ return(<div class="relative bg-gray-50">
       <div class="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
         <a href="/fiche-technique" class="whitespace-no-wrap text-base leading-6 font-medium text-gray-500 hover:text-gray-900 transition ease-in-out duration-150">
         <Link href="/fiche-technique">
-          Fiche technique
+        La maison pas à pas
           </Link>
         </a>
         <span class="inline-flex rounded-md shadow-sm">
@@ -100,7 +100,7 @@ return(<div class="relative bg-gray-50">
       <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-700 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
        Grande maison {" "}
         <br class="xl:hidden" />
-        <span class="text-bles-400">en drome provençal</span>
+        <span class="text-bles-400">en drôme provençal</span>
       </h2>
       <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
       {header.fields.desc}

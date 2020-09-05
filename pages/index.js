@@ -19,7 +19,7 @@ const client = require('contentful').createClient({
   accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN
 })
 
-export default function IndexPage({header, avisDesClients, faq, carrousel, argument, activitesExterieur, petitPlus}, props) {
+export default function IndexPage({header, avisDesClients, faq, carrousel, argument, activitesExterieur, petitPlus, planning}, props) {
   const [isModalOpen, setIsModalOpen] = useState(false)
   
   return (
@@ -32,7 +32,7 @@ export default function IndexPage({header, avisDesClients, faq, carrousel, argum
         <div className="bg-lavande-20">
           <TestimonalCaroussel props={props} avisDesClients={avisDesClients}/>
         </div>
-        <Pricing setIsModalOpen={setIsModalOpen} />
+        <Pricing setIsModalOpen={setIsModalOpen} planning={planning} />
         <FAQ faq={faq}/>
         <Footer />
 
@@ -82,6 +82,11 @@ export async function getStaticProps() {
   const petitPlus = petitPlusRequest.items[0]
 
 
+  const planning = await client.getEntries({
+    content_type: "planningDeReservation"
+  })
+
+
   // faq
   return {
     props: {
@@ -91,7 +96,8 @@ export async function getStaticProps() {
       carrousel,
       argument,
       activitesExterieur,
-      petitPlus
+      petitPlus,
+      planning
     },
   }
 }
