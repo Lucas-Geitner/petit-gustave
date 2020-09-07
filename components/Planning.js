@@ -1,6 +1,10 @@
 const Planning = ({planning, openModal}) => {
-    return(
 
+  //  const planningOrdered = planning?.items?.sort()
+
+   const planningOrdered = planning?.items?.sort((a, b) => a?.fields?.ordre - b?.fields?.ordre )
+
+    return(
     <div class="bg-white shadow overflow-hidden sm:rounded-md">
         <div class="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
   <div class="-ml-4 -mt-2 flex items-center justify-between flex-wrap sm:flex-no-wrap">
@@ -38,7 +42,7 @@ const Planning = ({planning, openModal}) => {
 </div>
 
     <ul className="h-50v overflow-scroll">
-        {planning?.items?.map(plan => {
+        {planningOrdered?.map(plan => {
         return(
             <li key={plan.sys.id}>
             <a href="#" onClick={openModal} class="block hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
