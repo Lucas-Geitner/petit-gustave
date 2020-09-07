@@ -25,7 +25,7 @@ return (
   <>
   <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
   <h3 className="text-center font-mono text-4xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
- Ce que pense les gens qui sont venus
+     Ils vous racontent
     </h3>
   </div>
     <Carousel
