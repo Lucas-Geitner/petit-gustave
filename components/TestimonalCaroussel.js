@@ -40,7 +40,7 @@ return (
   keyBoardControl={true}
   customTransition="all .5"
   containerclassName="carousel-container"
-  removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+  // removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
   deviceType={props.deviceType}
   dotListclassName="custom-dot-list-style"
   itemclassName="carousel-item-padding-40-px bg-lavande-20"
