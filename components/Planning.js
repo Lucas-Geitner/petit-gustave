@@ -37,8 +37,7 @@ const Planning = ({planning, openModal}) => {
   </div>
 </div>
 
-    <ul>
-
+    <ul className="h-50v overflow-scroll">
         {planning?.items?.map(plan => {
         return(
             <li key={plan.sys.id}>

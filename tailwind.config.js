@@ -14,6 +14,8 @@ module.exports = {
       },
       spacing: {
         '70v': '70vh',
+        '50v': '50vh',
+
       },
       colors: {
         "lavande-20": "#F7F5F9",
