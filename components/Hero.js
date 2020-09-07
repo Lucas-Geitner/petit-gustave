@@ -24,7 +24,7 @@ const Hero = ({header, setIsModalOpen}) => {
 //         <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
 //           <div className="rounded-md shadow">
 //             <a href="#" onClick={() => setIsModalOpen(true)} className="w-full font-semibold flex items-center justify-center px-8 py-3 border border-transparent text-2xl leading-6 font-mono rounded-md text-white bg-lavande-800 hover:bg-lavande-900 focus:outline-none focus:border-indigo-800 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-2xl md:px-10">
-//             Planing et reservation
+//             Planning et réservation
 //             </a>
 //           </div>
 //         </div>
@@ -72,10 +72,10 @@ return(<div class="relative bg-gray-50">
           Emplacement
         </a>
         <a href="#venir" class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 transition ease-in-out duration-150">
-          venir
+          Venir
         </a>
         <a href="#faq" class="text-gray-500 inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150">
-          faq
+          FAQ
         </a>
       </nav>
       <div class="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
@@ -86,7 +86,7 @@ return(<div class="relative bg-gray-50">
         </a>
         <span class="inline-flex rounded-md shadow-sm">
           <button class="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150" onClick={() => setIsModalOpen(true)}>
-          Planing et reservation
+          Planning et réservation
           </button>
         </span>
       </div>
