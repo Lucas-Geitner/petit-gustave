@@ -1,5 +1,9 @@
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+
 const FAQ = ({faq}) => { 
 // console.log({faq})
+console.log(faq)
+
 return (<div className="bg-gray-50">
   <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8" id="faq">
     <h2 className="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10 font-mono">
@@ -8,6 +12,7 @@ return (<div className="bg-gray-50">
     <div className="mt-6 border-t-2 border-bles-400 pt-6">
       <dl>
       {faq.items.map((fa, index) => {
+        const Doc = documentToReactComponents(fa.fields.reponse);
 
         if(index == 0){
           return (
@@ -17,7 +22,7 @@ return (<div className="bg-gray-50">
             </dt>
             <dd className="mt-2 md:mt-0 md:col-span-7">
               <p className="text-base leading-6 text-gray-500">
-              {fa.fields.rponse}
+              {Doc}
               </p>
             </dd>
           </div>
