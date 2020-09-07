@@ -25,6 +25,9 @@ const Features = ({carrousel, argument}) => {
   const c2titre = argument?.fields?.c2titre
   const c2description = argument?.fields?.c2description
 
+  const Tctitre = argument?.fields?.Tctitre
+  const cdDescription = argument?.fields?.cdDescription
+
 return(
   <div className="py-16 bg-lavande-20 overflow-hidden lg:py-24">
     <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
@@ -188,6 +191,23 @@ return(
                     <h5 className="text-xl leading-6 font-bold text-gray-900 font-mono ">{c2titre}</h5>
                     <p className="mt-2 text-base leading-6 text-gray-500">
                     {c2description}
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li className="mt-10">
+                <div className="flex">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-md text-gray-700">
+                      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h5 className="text-xl leading-6 font-bold text-gray-900 font-mono ">{Tctitre}</h5>
+                    <p className="mt-2 text-base leading-6 text-gray-500">
+                    {cdDescription}
                     </p>
                   </div>
                 </div>
