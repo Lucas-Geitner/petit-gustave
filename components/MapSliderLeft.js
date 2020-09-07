@@ -21,7 +21,10 @@ const MapSlider = () => {
                   <div className="group  space-x-2">
                       <h4 className="text-sm leading-5 font-medium text-gray-900">Paris</h4>
                         <p className="text-sm leading-5 text-gray-500">
-                        🚇{" "}tgv: 2 heures 45
+                        🚇{" "}TGV: 2 heures 45
+                        </p>
+                        <p className="text-sm leading-5 text-gray-500 pt-4">
+                        (La gare de Montélimar est à seulement 15 minutes en voiture de la maison)
                         </p>
                   </div>
                 </li>
@@ -29,7 +32,7 @@ const MapSlider = () => {
                   <div className="group  space-x-2">
                       <h4 className="text-sm leading-5 font-medium text-gray-900">Grenoble</h4>
                         <p className="text-sm leading-5 text-gray-500">
-                        🚗{" "}voiture:  1 heure 35 
+                        🚗{" "}Voiture:  1 heure 35 
                         </p>
                   </div>
                 </li>
@@ -37,10 +40,10 @@ const MapSlider = () => {
                   <div className="group  space-x-2">
                       <h4 className="text-sm leading-5 font-medium text-gray-900">Lyon</h4>
                         <p className="text-sm leading-5 text-gray-500">
-                        🚗{" "}voiture: 1 heure 42
+                        🚗{" "}Voiture: 1 heure 45
                         </p>
                         <p className="text-sm leading-5 text-gray-500">
-                        🚇{" "}tgv: 1 heure 30
+                        🚇{" "}TER: 1 heure 30
                         </p>
                   </div>
                 </li>
@@ -48,7 +51,7 @@ const MapSlider = () => {
                   <div className="group  space-x-2">
                       <h4 className="text-sm leading-5 font-medium text-gray-900">Marseille</h4>
                         <p className="text-sm leading-5 text-gray-500">
-🚗{" "}voiture: 2 heures 
+🚗{" "}Voiture: 2 heures 
                         </p>
                   </div>
                 </li>
