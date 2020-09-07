@@ -68,7 +68,7 @@ const Planning = ({planning, openModal}) => {
                     </div> : (
                     <div class="mr-6 flex items-center text-sm leading-5 text-gray-500">
                     <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
-                    Plus disponible
+                    Réservé
                     </span>
                     </div>
                     )}
