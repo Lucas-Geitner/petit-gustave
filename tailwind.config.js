@@ -12,6 +12,9 @@ module.exports = {
         sans: ['Helvetica Neue', ...defaultTheme.fontFamily.sans],
         mono: ["Josefin Slab", ...defaultTheme.fontFamily.mono]
       },
+      spacing: {
+        '70v': '70vh',
+      },
       colors: {
         "lavande-20": "#F7F5F9",
         "lavande-50": "#F2EFF5",

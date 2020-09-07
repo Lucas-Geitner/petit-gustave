@@ -1,9 +1,9 @@
 const MapSlider = ({activitesExterieur}) => {
 
-return (<div className="  flex md:block ">
+return (<div className=" flex md:block ">
   <div className=" md:overflow-hidden m-auto">
     <section className="max-w-full flex ">
-      <div className="w-screen max-w-md">
+      <div className="w-screen max-w-md h-70v">
         <div className="h-full flex flex-col bg-white shadow-xl overflow-y-scroll">
           <header className="p-6">
             <div className="flex items-start justify-between space-x-3">
@@ -28,9 +28,9 @@ return (<div className="  flex md:block ">
                     <span className="flex-shrink-0 inline-block relative">
                       <img className="h-10 w-10 rounded-full" src={act?.fields?.logo?.fields?.file?.url} alt={act?.fields?.logo?.fields?.file?.title} />
                     </span>
-                    <div className="ml-4 truncate">
-                      <div className="text-sm leading-5 font-medium text-gray-900 truncate">{act?.fields?.name}</div>
-                      <div className="text-sm leading-5 text-gray-500 truncate"> {act?.fields?.descriptionTempsDeTrajet}</div>
+                    <div className="ml-4 ">
+                      <div className="text-sm leading-5 font-medium text-gray-900 ">{act?.fields?.name}</div>
+                      <div className="text-sm leading-5 text-gray-500 pt-2"> {act?.fields?.descriptionTempsDeTrajet}</div>
                     </div>
                   </div>
                 </a>
