@@ -100,7 +100,7 @@ return(<div class="relative bg-gray-50">
       <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-700 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
        Grande maison {" "}
         <br class="xl:hidden" />
-        <span class="text-bles-400">en drôme provençal</span>
+        <span class="text-bles-400">en Drôme provençale</span>
       </h2>
       <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
       {header.fields.desc}
