@@ -12,7 +12,7 @@ return(
     <div className="max-w-screen-xl mx-auto text-center px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto space-y-2 lg:max-w-none">
         <h2 className="text-lg leading-6 font-semibold text-bles-300 uppercase tracking-wider font-mono">
-          Nos offres
+          Consultez nos disponibilités
         </h2>
         <p className="text-3xl leading-9 font-extrabold text-white sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none font-mono">
           Nous serions heureux de vous accueillir
