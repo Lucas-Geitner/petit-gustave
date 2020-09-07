@@ -15,10 +15,10 @@ return(
           Consultez nos disponibilités
         </h2>
         <p className="text-3xl leading-9 font-extrabold text-white sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none font-mono">
-          Nous serions heureux de vous accueillir
+          Nous serons heureux de vous accueillir
         </p>
         <p className="text-xl leading-7 text-gray-300">
-          À partir de 999 €
+          À partir de 900 € la semaine
         </p>
       </div>
     </div>
