@@ -1,4 +1,5 @@
 const MapSlider = ({activitesExterieur}) => {
+  const activitesExterieurOrdered = activitesExterieur?.items?.sort((a, b) => a?.fields?.ordre - b?.fields?.ordre )
 
 return (<div className=" flex md:block ">
   <div className=" md:overflow-hidden m-auto">
@@ -18,7 +19,7 @@ return (<div className=" flex md:block ">
           </div>
           <ul className="divide-y divide-gray-200 overflow-y-auto">
 
-            {activitesExterieur.items.map(act => (
+            {activitesExterieurOrdered.map(act => (
 
               <li className="px-6 py-5 relative" key={act.sys.id}>
               <div className="group flex justify-between items-center space-x-2">

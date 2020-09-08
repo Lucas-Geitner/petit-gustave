@@ -18,7 +18,6 @@ class Map extends Component {
   render() {
 
     const activitesExterieur = this.props?.activitesExterieur
-    console.log(activitesExterieur)
     return (
       <div className="hidden lg:block">
       <div className="relative flex" id="venir">

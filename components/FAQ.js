@@ -2,7 +2,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 const FAQ = ({faq}) => { 
 // console.log({faq})
-console.log(faq)
+
 
 return (<div className="bg-gray-50">
   <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8" id="faq">

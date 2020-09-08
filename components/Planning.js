@@ -1,6 +1,5 @@
 const Planning = ({planning, openModal}) => {
 
-  //  const planningOrdered = planning?.items?.sort()
 
    const planningOrdered = planning?.items?.sort((a, b) => a?.fields?.ordre - b?.fields?.ordre )
 
