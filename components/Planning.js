@@ -9,7 +9,7 @@ const Planning = ({planning, openModal}) => {
   <div class="-ml-4 -mt-2 flex items-center justify-between flex-wrap sm:flex-no-wrap">
     <div class="ml-4 mt-2">
       <h3 class="text-lg leading-6 font-medium text-gray-900">
-        Contacter nous pour réserver
+      Contactez-nous pour réserver
       </h3>
     </div>
     <div class="ml-4 mt-4 flex-shrink-0 flex">

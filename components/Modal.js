@@ -43,7 +43,7 @@ return(
         </div>
         <div className="mt-3 text-center sm:mt-5">
           <h3 className="text-lg leading-6 font-medium text-gray-900" id="modal-headline">
-            Contacter nous
+          Contactez-nous
           </h3>
           <div className="mt-2">
             <p className="text-sm leading-5 text-gray-500">
