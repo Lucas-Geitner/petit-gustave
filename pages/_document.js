@@ -38,6 +38,19 @@ class CustomDocument extends Document {
                     `,
                 }}
               />
+        <meta charSet="utf-8" />
+        <meta name="title" content="Grande maison en Drôme provençale" />
+        <meta name="description" content="A Marsanne en Drôme provençale, notre grande maison familiale de 250m2 vous accueille pour vos séjours en famille ou entre amis !" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.maison-en-provence.net/" />
+        <meta property="og:title" content="Grande maison en Drôme provençale" />
+        <meta property="og:description" content="A Marsanne en Drôme provençale, notre grande maison familiale de 250m2 vous accueille pour vos séjours en famille ou entre amis !" />
+        <meta property="og:image" content="https://www.maison-en-provence.net/static/images/share.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.maison-en-provence.net/" />
+        <meta property="twitter:title" content="Grande maison en Drôme provençale" />
+        <meta property="twitter:description" content="A Marsanne en Drôme provençale, notre grande maison familiale de 250m2 vous accueille pour vos séjours en famille ou entre amis !" />
+        <meta property="twitter:image" content="https://www.maison-en-provence.net/images/share.png" />
 
         </Head>
         <body>

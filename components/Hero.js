@@ -97,10 +97,10 @@ return(<div class="relative bg-gray-50">
 <main class="lg:relative">
   <div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
     <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
-      <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-700 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
+      <h2 class=" font-mono text-4xl tracking-tight leading-10 font-extrabold text-gray-700 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
        Grande maison {" "}
         <br class="xl:hidden" />
-        <span class="text-bles-400">en Drôme provençale</span>
+        <span class="text-bles-400 font-mono">en Drôme provençale</span>
       </h2>
       <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
       {header.fields.desc}

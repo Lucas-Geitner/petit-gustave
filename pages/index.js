@@ -9,6 +9,7 @@ import dynamic from 'next/dynamic';
 import TestimonalCaroussel from "../components/TestimonalCaroussel"
 import Modal from "../components/Modal"
 import Footer from "../components/Footer"
+import Head  from 'next/head'
 
 const Map = dynamic(() => import('../components/Map'), {
   ssr: false
@@ -24,6 +25,10 @@ export default function IndexPage({header, avisDesClients, faq, carrousel, argum
   
   return (
     <div>
+      <Head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>Grande maison en Drôme provençale</title>
+      </Head>
         <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
         <Hero header={header} setIsModalOpen={setIsModalOpen} />
         <Features  carrousel={carrousel} argument={argument}/>
