@@ -120,7 +120,7 @@ return(<div class="relative bg-gray-50">
     </div>
   </div>
   <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-    <img class="absolute inset-0 w-full h-full object-cover" src="https://images.ctfassets.net/4dq5uvttrwgb/DPIGLEKaq7dfI8rlk9KYV/87c86389ac2d8147e3f7f8e6b989c420/Irena_Table_et_chaises_sous_le_pin.JPG" alt="Woman on her phone" />
+    <img class="absolute inset-0 w-full h-full object-cover" src="https://images.ctfassets.net/4dq5uvttrwgb/DPIGLEKaq7dfI8rlk9KYV/bb5326a972f772af059235a97e45e26a/Irena_Table_et_chaises_sous_le_pin__1_.jpg" alt="Maison en provence" />
   </div>
 </main>
 </div>
