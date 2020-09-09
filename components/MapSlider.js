@@ -1,6 +1,7 @@
 const MapSlider = ({activitesExterieur}) => {
   const activitesExterieurOrdered = activitesExterieur?.items?.sort((a, b) => a?.fields?.ordre - b?.fields?.ordre )
 
+
 return (<div className=" flex md:block ">
   <div className=" md:overflow-hidden m-auto">
     <section className="max-w-full flex ">
@@ -19,15 +20,30 @@ return (<div className=" flex md:block ">
           </div>
           <ul className="divide-y divide-gray-200 overflow-y-auto">
 
-            {activitesExterieurOrdered.map(act => (
+            {activitesExterieurOrdered.map(act => {
+              let logo = "/images/icon/star.png"
 
+              if(act?.fields?.type === "village perché") { logo = "/images/icon/village.svg"}
+              if(act?.fields?.type === "chateaux") { logo = "/images/icon/chateau.png"}
+              if(act?.fields?.type === "librairies") { logo = "/images/icon/book.png"}
+              if(act?.fields?.type === "foret") { logo = "/images/icon/foret.png"}
+              if(act?.fields?.type === "equitation") { logo = "/images/icon/cheval.png"}
+              
+
+              let image = act?.fields?.logo?.fields?.file?.url
+
+              if(!image){
+                image = logo
+              }
+
+              return (
               <li className="px-6 py-5 relative" key={act.sys.id}>
               <div className="group flex justify-between items-center space-x-2">
                 <a href={act?.fields?.url} className="-m-1 p-1 block" target="_blank">
                   <span className="absolute inset-0 group-hover:bg-gray-50"></span>
                   <div className="flex-1 flex items-center min-w-0 relative">
                     <span className="flex-shrink-0 inline-block relative">
-                      <img className="h-10 w-10 rounded-full" src={act?.fields?.logo?.fields?.file?.url} alt={act?.fields?.logo?.fields?.file?.title} />
+                      <img className="h-10 w-10 rounded-full" src={image} alt={act?.fields?.logo?.fields?.file?.title} />
                     </span>
                     <div className="ml-4 ">
                       <div className="text-sm leading-5 font-medium text-gray-900 ">{act?.fields?.name}</div>
@@ -46,7 +62,7 @@ return (<div className=" flex md:block ">
                 </div>
               </div>
               </li>
-            ))}
+            )})}
           </ul>
         </div>
       </div>

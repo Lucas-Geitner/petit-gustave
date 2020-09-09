@@ -30,7 +30,7 @@ return (<div className="bg-gray-50">
           }
 
           return(
-            <div className="mt-8 border-t border-gray-200 pt-6 md:grid md:grid-cols-12 md:gap-8">
+            <div className="mt-8 border-t border-gray-200 pt-6 md:grid md:grid-cols-12 md:gap-8" key={fa.sys.id}>
             <dt className="text-base leading-6 font-medium text-gray-900 md:col-span-5">
             {fa.fields.question}
             </dt>

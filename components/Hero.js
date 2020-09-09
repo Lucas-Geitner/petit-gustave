@@ -55,37 +55,37 @@ const Hero = ({header, setIsModalOpen}) => {
 // )
 
 
-return(<div class="relative bg-gray-50">
-<div class="relative bg-white shadow">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
-      <div class="w-0 flex-1 flex">
-        <a  class="inline-flex">
-          <img class="h-8 w-auto sm:h-10" src="/images/favicon-dark.png" alt="Workflow" />
+return(<div className="relative bg-gray-50">
+<div className="relative bg-white shadow">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+      <div className="w-0 flex-1 flex">
+        <a  className="inline-flex">
+          <img className="h-8 w-auto sm:h-10" src="/images/favicon-dark.png" alt="Workflow" />
         </a>
       </div>
-      <nav class="hidden md:flex space-x-10">
-        <a href="#lamaison" class="text-gray-500 inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150">
+      <nav className="hidden md:flex space-x-10">
+        <a href="#lamaison" className="text-gray-500 inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150">
           Maison
         </a>
-        <a href="#emplacement" class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 transition ease-in-out duration-150">
+        <a href="#emplacement" className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 transition ease-in-out duration-150">
           Emplacement
         </a>
-        <a href="#venir" class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 transition ease-in-out duration-150">
+        <a href="#venir" className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 transition ease-in-out duration-150">
           Venir
         </a>
-        <a href="#faq" class="text-gray-500 inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150">
+        <a href="#faq" className="text-gray-500 inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150">
           FAQ
         </a>
       </nav>
-      <div class="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
-        <a href="/fiche-technique" class="whitespace-no-wrap text-base leading-6 font-medium text-gray-500 hover:text-gray-900 transition ease-in-out duration-150">
+      <div className="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
+        <a href="/fiche-technique" className="whitespace-no-wrap text-base leading-6 font-medium text-gray-500 hover:text-gray-900 transition ease-in-out duration-150">
         <Link href="/fiche-technique">
         La maison pas à pas
           </Link>
         </a>
-        <span class="inline-flex rounded-md shadow-sm">
-          <button class="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150" onClick={() => setIsModalOpen(true)}>
+        <span className="inline-flex rounded-md shadow-sm">
+          <button className="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150" onClick={() => setIsModalOpen(true)}>
           Planning et réservation
           </button>
         </span>
@@ -94,33 +94,33 @@ return(<div class="relative bg-gray-50">
   </div>
 </div>
 
-<main class="lg:relative">
-  <div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
-    <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
-      <h2 class=" font-mono text-4xl tracking-tight leading-10 font-extrabold text-gray-700 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
+<main className="lg:relative">
+  <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
+    <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+      <h2 className=" font-mono text-4xl tracking-tight leading-10 font-extrabold text-gray-700 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
        Grande maison {" "}
-        <br class="xl:hidden" />
-        <span class="text-bles-400 font-mono">en Drôme provençale</span>
+        <br className="xl:hidden" />
+        <span className="text-bles-400 font-mono">en Drôme provençale</span>
       </h2>
-      <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+      <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
       {header.fields.desc}
       </p>
-      {/* <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
-        <div class="rounded-md shadow">
-          <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+      {/* <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
+        <div className="rounded-md shadow">
+          <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
             Get started
           </a>
         </div>
-        <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-          <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+        <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+          <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
             Live demo
           </a>
         </div>
       </div> */}
     </div>
   </div>
-  <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-    <img class="absolute inset-0 w-full h-full object-cover" src="https://images.ctfassets.net/4dq5uvttrwgb/DPIGLEKaq7dfI8rlk9KYV/bb5326a972f772af059235a97e45e26a/Irena_Table_et_chaises_sous_le_pin__1_.jpg" alt="Maison en provence" />
+  <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+    <img className="absolute inset-0 w-full h-full object-cover" src="https://images.ctfassets.net/4dq5uvttrwgb/DPIGLEKaq7dfI8rlk9KYV/bb5326a972f772af059235a97e45e26a/Irena_Table_et_chaises_sous_le_pin__1_.jpg" alt="Maison en provence" />
   </div>
 </main>
 </div>
