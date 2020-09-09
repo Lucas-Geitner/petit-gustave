@@ -22,7 +22,7 @@ return(
         </p>
         <div className="pt-5">
         <a href="https://www.service-public.fr/particuliers/vosdroits/F31952"  target="_blank" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-lavande-100 bg-gray-800 hover:text-lavande-400 hover:bg-indigo-800 focus:outline-none focus:shadow-outline focus:border-indigo-300 transition duration-150 ease-in-out">
-        Vacances scolaires 2020-2021
+        Calendrier des vacances scolaires 2020-2021
         </a>
         </div>
 
