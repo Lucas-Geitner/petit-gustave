@@ -64,7 +64,7 @@ return(<div className="relative bg-gray-50">
           <img className="h-8 w-auto sm:h-10" src="/images/favicon-dark.png" alt="Workflow" />
         </a>
       </div>
-      <nav className="hidden md:flex space-x-10">
+      <nav className="hidden md:flex space-x-10 font-mono">
         <a href="#lamaison" className="text-gray-500 inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 transition ease-in-out duration-150">
           Maison
         </a>
@@ -79,13 +79,13 @@ return(<div className="relative bg-gray-50">
         </a>
       </nav>
       <div className="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
-        <a href="/fiche-technique" className="whitespace-no-wrap text-base leading-6 font-medium text-gray-500 hover:text-gray-900 transition ease-in-out duration-150">
+        <a href="/fiche-technique" className="font-mono whitespace-no-wrap text-base leading-6 font-medium text-gray-500 hover:text-gray-900 transition ease-in-out duration-150">
         <Link href="/fiche-technique">
         La maison pas à pas
           </Link>
         </a>
         <span className="inline-flex rounded-md shadow-sm">
-          <button className="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150" onClick={() => setIsModalOpen(true)}>
+          <button className="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150 font-mono" onClick={() => setIsModalOpen(true)}>
           Planning et réservation
           </button>
         </span>
@@ -120,7 +120,8 @@ return(<div className="relative bg-gray-50">
     </div>
   </div>
   <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-    <img className="absolute inset-0 w-full h-full object-cover" src="https://images.ctfassets.net/4dq5uvttrwgb/DPIGLEKaq7dfI8rlk9KYV/bb5326a972f772af059235a97e45e26a/Irena_Table_et_chaises_sous_le_pin__1_.jpg" alt="Maison en provence" />
+    <img className="absolute inset-0 w-full h-full object-cover" src="https://images.ctfassets.net/4dq5uvttrwgb/6xqSXUFb3aUgYD7zkGujPm/ff158fb88b661376dc89a6583c956f62/Maison-2.jpg" alt="Maison en provence" />
+
   </div>
 </main>
 </div>

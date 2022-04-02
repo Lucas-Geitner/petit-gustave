@@ -40,7 +40,7 @@ const Planning = ({planning, openModal}) => {
   </div>
 </div>
 
-    <ul className="h-50v overflow-scroll">
+    {/* <ul className="h-50v overflow-scroll">
         {planningOrdered?.map(plan => {
         return(
             <li key={plan.sys.id}>
@@ -80,7 +80,7 @@ const Planning = ({planning, openModal}) => {
 
         )
         })}
-    </ul>
+    </ul> */}
   </div>
   )
 }

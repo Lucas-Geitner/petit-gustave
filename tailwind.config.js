@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Helvetica Neue', ...defaultTheme.fontFamily.sans],
-        mono: ["Josefin Slab", ...defaultTheme.fontFamily.mono]
+        mono: ["Alice", ...defaultTheme.fontFamily.mono]
       },
       spacing: {
         '70v': '70vh',

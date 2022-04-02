@@ -1,5 +1,10 @@
 const Testimonial = ({name, id ,content, date}) => {
 
+
+  return(
+    //  w-[80vw] md:w-[43vw] xl:w-[30rem]
+        <figure class="__slide shrink-0 p-8 sm:p-10 m-10 bg-white text-lavande-900 rounded-lg"><div class="flex items-center justify-between"><div class="flex gap-4 items-center"><figcaption><div class="text-m-p-sm lg:text-d-p-sm">{name} — {date}</div></figcaption></div></div><div class="h-6"></div><blockquote class="text-m-p-sm xl:text-d-p-sm text-gray-700">&ldquo;{content}&rdquo;</blockquote></figure>
+  )
   return(
     <section className="py-12 bg-lavande-20 overflow-hidden md:py-10 lg:pt-4 flex h-full items-center" key={id}>
     <div className="relative max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-4">

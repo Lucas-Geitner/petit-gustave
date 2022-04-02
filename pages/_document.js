@@ -4,13 +4,15 @@ import React from 'react';
 class CustomDocument extends Document {
   render() {
     return (
-      <html lang="en">
+      <html lang="fr">
         <Head>
         <link rel="shortcut icon" href="/images/favicon-dark.png" />
           <link
             href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,600;1,700&display=swap"
             rel="stylesheet"
           />
+
+       <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet" />
           <link
             href="https://www.apc.fr/skin/frontend/rwd/apcv2/fonts/HelveticaNeueLTStd-Bd.woff2"
             rel="stylesheet"
