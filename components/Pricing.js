@@ -18,7 +18,7 @@ return(
           Nous serons heureux de vous accueillir
         </p>
         <p className="text-xl leading-7 text-gray-300">
-          À partir de 900 € la semaine
+          À partir de 1 000 € la semaine
         </p>
         <div className="pt-5">
         <div onClick={(e) => openModal(e)} className="inline-flex cursor-pointer items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-lavande-100 bg-gray-800 hover:text-lavande-400 hover:bg-indigo-800 focus:outline-none focus:shadow-outline focus:border-indigo-300 transition duration-150 ease-in-out">
